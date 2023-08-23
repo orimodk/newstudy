@@ -2,12 +2,6 @@
 import { signOut, useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 import Link from 'next/link'
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: '...',
-    description: '...',
-  };
 export default function Welcome() {
     const { data: session } = useSession();
 
