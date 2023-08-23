@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "engines": {
-    "node": "19.18.1"
+    "node": ">=19"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
