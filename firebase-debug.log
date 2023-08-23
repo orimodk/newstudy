@@ -1,0 +1,34 @@
+[debug] [2023-08-23T07:47:54.624Z] ----------------------------------------------------------------------
+[debug] [2023-08-23T07:47:54.627Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-23T07:47:54.628Z] CLI Version:   11.29.0
+[debug] [2023-08-23T07:47:54.628Z] Platform:      win32
+[debug] [2023-08-23T07:47:54.628Z] Node Version:  v19.8.1
+[debug] [2023-08-23T07:47:54.628Z] Time:          Wed Aug 23 2023 09:47:54 GMT+0200 (Centraleuropæisk sommertid)
+[debug] [2023-08-23T07:47:54.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-23T07:47:54.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-23T07:47:54.692Z] > authorizing via signed-in user (newers@gmail.com)
+[debug] [2023-08-23T07:47:54.692Z] [iam] checking project study-b9fbc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-23T07:47:54.695Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/study-b9fbc:testIamPermissions [none]
+[debug] [2023-08-23T07:47:54.695Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/study-b9fbc:testIamPermissions x-goog-quota-user=projects/study-b9fbc
+[debug] [2023-08-23T07:47:54.695Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/study-b9fbc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-23T07:47:55.379Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/study-b9fbc:testIamPermissions 200
+[debug] [2023-08-23T07:47:55.379Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/study-b9fbc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-23T07:47:55.380Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc [none]
+[debug] [2023-08-23T07:47:55.607Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc 200
+[debug] [2023-08-23T07:47:55.607Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc {"projectId":"study-b9fbc","projectNumber":"812983669212","displayName":"Study","name":"projects/study-b9fbc","resources":{"hostingSite":"study-b9fbc"},"state":"ACTIVE","etag":"1_696f644e-19dd-4dd5-8784-71334e41126e"}
+[debug] [2023-08-23T07:48:04.882Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites pageToken=&pageSize=10
+[debug] [2023-08-23T07:48:05.711Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites 200
+[debug] [2023-08-23T07:48:05.712Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites {"sites":[{"name":"projects/study-b9fbc/sites/study-b9fbc","defaultUrl":"https://study-b9fbc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-23T07:48:05.712Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites 
+[debug] [2023-08-23T07:48:05.944Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites 200
+[debug] [2023-08-23T07:48:05.944Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/study-b9fbc/sites {"sites":[{"name":"projects/study-b9fbc/sites/study-b9fbc","defaultUrl":"https://study-b9fbc.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-23T07:48:05.945Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc/webApps/-/config [none]
+[debug] [2023-08-23T07:48:06.854Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc/webApps/-/config 200
+[debug] [2023-08-23T07:48:06.855Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/study-b9fbc/webApps/-/config {"projectId":"study-b9fbc","appId":"1:812983669212:web:2f6ebaa41691e32de07f19","storageBucket":"study-b9fbc.appspot.com","apiKey":"AIzaSyBbyYFxLFNk5tNBXIMvk7QFmnUTaPXIWS4","authDomain":"study-b9fbc.firebaseapp.com","messagingSenderId":"812983669212"}
+[debug] [2023-08-23T07:49:05.920Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (C:\Users\nsj\AppData\Roaming\nvm\v19.8.1\node_modules\firebase-tools\lib\frameworks\next\index.js:206:56)
+    at async prepareFrameworks (C:\Users\nsj\AppData\Roaming\nvm\v19.8.1\node_modules\firebase-tools\lib\frameworks\index.js:294:13)
+    at async deploy (C:\Users\nsj\AppData\Roaming\nvm\v19.8.1\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,7 +1,6 @@
 'use client';
 import { signOut, useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
-
 export default function Home() {
   const session = useSession({
     required: true,
@@ -11,7 +10,7 @@ export default function Home() {
   });
   return (
     <div className="pt-8">
-      <div className='text-white'>Dit profilnavn er {session?.data?.user?.email }</div>
+      <div className='text-white'>Dit profilnavn er {session?.data?.user?.email}</div>
     </div>
   )
 }
